@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: rgb(167, 226, 202);
+  
+}
+
+#header{
+    position: absolute;
+    width: 100%;
+    height: 10%;
+    top: 0;
+    left: 0;
+    /* background-color: #7aeec1; */
+    padding: 8px 0px 8px 0px;
+}
+
+#content{
+    position: absolute;
+    width: 100%;
+    height: 80%;
+    top: 20%;
+    left: 0;
+    /* background-color: aqua; */
+}
+
+#footer{
+    position: absolute;
+    width: 100%;
+    height: 5%;
+    top: 95%;
+    left: 0;
+}
+.link-container{
+    width: 50%;
+    height: 100%;
+    padding-top: 10px;
+    padding-left: 5%; 
+    /* background-color: brown; */
+}
+.header-link:link,.header-link:visited{
+    font-family: "微软雅黑";
+    font-size: 34px;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-variant: normal;
+    transition: padding-left 1s; /*过渡动画*/
+    
+    /* color:rgba(57, 123, 247, 0.664); */
+    
+}
+.header-link:hover{
+    font-size: 40px;
+    font-family: "微软雅黑";
+    text-decoration: underline;
+    /* color: rgba(57, 123, 247, 0.664); */
+    padding-left: 30px;
+}
+.header-daohan {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    float: right;
+    width: 40%;
+    height: 50%;
+    /* background-color: aqua; */
+    margin-top: 10px;
+    margin-right: 20px;
+    text-align: right;
+}
+.header-daohan a:link{
+    margin-top: 10px;
+    text-decoration: none;
+}
+.header-daohan a:hover{
+    font-weight: 500;
+    font-size: larger;
+    color: rgba(22, 29, 29, 0.959);
+    text-decoration: underline;
+}
+
+.login-container{
+    position: relative;
+    right: -25%;
+    margin: auto;
+    width: 20%;
+    height: 72%;
+    background-color: white;
+    border-radius: 2em 2em 2em 2em;
+   
+}
+.login-container div.switch{
+    position: relative;
+    top: 5%;
+    text-align: center;
+}
+span{
+    font-size: 1.8em;
+    font-weight: 700;   
+    color: rgba(9, 121, 83, 0.384);
+    cursor: pointer;
+}
+
+.form{
+    position: relative;
+    top: 10%;
+    text-align: center;
+}
+div.input input, .form button{
+    position: relative;
+    height: 50px;
+    width: 250px;
+    vertical-align: top;
+    outline: none; /*去除谷歌点击input输入框出现边框*/
+    
+    margin: 0.8em 0 0.8em 0;
+    font-size: 1.2em;
+    text-align: center;
+    border:0;
+    border-bottom-color: black;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+}
+
+.form button{
+   padding-bottom: 0;
+   margin-bottom: 0;
+    border: none;
+    border-radius: 15px;
+    background-color: rgb(136, 235, 189);
+}
+.form button:hover{
+    font-size: 1.2em;
+    background-color: rgb(104, 218, 189);
+    cursor: pointer;
+}
+
+.form button:active{
+    background-color: rgb(5, 45, 32);
+}
+
+#login,#register{
+    color: rgb(18, 126, 65);
+}
+.forgetpw, .forgetpw small{
+    padding: 0;
+    margin: 0;
+    font-size: smaller;
+    text-align: left;
+    position: absolute;
+    left: 14%;
+}
+
+#hidden{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

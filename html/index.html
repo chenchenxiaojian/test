@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chenweijianの个人书城=v=</title>
+    <link rel="stylesheet" href="/src/css/index.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="link-container">
+            <a href="#" class="header-link">chenweijianの个人书城</a>
+        </div>
+        <div class="header-daohan">
+            <a href="#">商城首页</a> |
+            <a href="#">帮助中心</a> |
+            <a href="#">关于作者</a> |
+            <a href="#">留言板</a> |
+            <a href="#">联系我们</a>
+        </div>
+    </div>
+    <div id="content">
+        <div class="login-container">
+            <div class="switch">
+                <span id="login" class="active">Login</span>
+                <span> | </span>
+                <span id="register" class="active">Register</span>
+            </div>
+            <div class="form">
+                <form action="">
+                    <div class="input"><input type="text" placeholder="username"></div>
+                    <div class="input"><input type="password" placeholder="password"></div>
+                     <div class="input" id="hidden"><input type="password" placeholder="repeat-password"></div>
+
+                    <div><button id="set">login</button></div>
+                    <span class="forgetpw"><a href="#"><small>forget?</small></a></span>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div id="footer">weibu</div>
+
+    <script>
+        document.getElementById("login").onclick = function () {
+            document.getElementById("register").style.fontSize = "1em";
+            document.getElementById("register").style.color = " rgb(61, 68, 64)";
+            document.getElementById("login").style.color = " rgb(18, 126, 65)";
+            document.getElementById("login").style.fontSize = "2em";
+            document.getElementById("hidden").style.display = "none";
+        }
+        document.getElementById("register").onclick = function () {
+          
+            document.getElementById("login").style.fontSize = "1em";
+            document.getElementById("login").style.color = " rgb(61, 68, 64)";
+            document.getElementById("register").style.color = " rgb(18, 126, 65)";
+            document.getElementById("register").style.fontSize = "2em";
+            document.getElementById("hidden").style.display = "block";
+            document.getElementsByClassName("login-container").setAttribute("height", "90%")
+        
+        }
+    </script>
+
+</body>
+
+</html>
